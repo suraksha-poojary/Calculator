@@ -12,6 +12,8 @@
   background-color:white;
   height: 390px;
   padding:20px;
+  text-align: center;
+  
 }
 form input{
   border:none;
@@ -25,7 +27,7 @@ form input{
   color:white;
   font-weight: border;
   cursor: pointer;
-  text-align: right;
+  text-align: center;
 
 }
 form input[type="button"]:hover{
@@ -43,15 +45,22 @@ form.display input{
   font-size:40px;
   padding: 5px 10px;
   background-color: black;
+  
 }
 form input.equal{
-  width:123px;
+  width:115px;
 
 }
 .input-calculator {
-  padding-left: 190px;
   font-size: 32px;
+  width:244px;
+  text-align: right;
+
+  
+
+  
   }
 .input-calculator1 {
   background-color: brown;
+  text-align: center;
 }

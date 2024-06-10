@@ -9,13 +9,13 @@ function App() {
       <div className="calculator">
         <form action="">
           <div className="display">
-          <input className='input-calculator' type="text" value={value}/>
+          <input className='input-calculator' type="text" value= {value}/>
         </div>
         <div>
           <input className="input-calculator1" type="button" value="Ac" onClick={e => setValue('')} />
           <input className="input-calculator1" type="button" value="DE"  onClick={e => setValue(value.slice(0,-1))}/>
-          <input className="input-calculator1" type="button" value="." />
-          <input className="input-calculator1" type="button" value="/" />
+          <input className="input-calculator1" type="button" value="." onClick={e => setValue(value + e.target.value)}/>
+          <input className="input-calculator1" type="button" value="/" onClick={e => setValue(value + e.target.value)}/>
         </div>
         <div>
           <input type="button" value="7" onClick={e => setValue(value + e.target.value)}/>
@@ -38,7 +38,7 @@ function App() {
         <div>
           <input className="input-calculator1" type="button" value="00"onClick={e => setValue(value + e.target.value)} />
           <input className="input-calculator1" type="button" value="0" onClick={e => setValue(value + e.target.value)}/>
-          <input className="input-calculator1" type="button" value="=" className="equal"onClick={e => setValue(eval(value))}/>
+          <input className="input-calculator1" type="button" value="=" className="equal" onClick={e => setValue(eval(value))}/>
         </div>
       </form>
 
