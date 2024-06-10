@@ -47,7 +47,7 @@ form.display input{
   background-color: black;
   
 }
-form input.equal{
+form input #equal{
   width:115px;
 
 }
